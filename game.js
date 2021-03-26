@@ -52,7 +52,7 @@ function checkAnswer(currentLevel) {
     }
   } else {
     console.log("Error");
-    var audio = new Audio("file:///D:/WebDev_bootcamp/SimonGame/188 Simon-Game-Challenge-Starting-Files/Simon Game Challenge Starting Files/sounds/wrong.mp3");
+    var audio = new Audio("/sounds/wrong.mp3");
     audio.play();
     $("body").addClass("game-over");
     setTimeout(function () {
@@ -65,7 +65,7 @@ function checkAnswer(currentLevel) {
 }
 
 function playSound(name) {
-  var audio = new Audio("file:///D:/WebDev_bootcamp/SimonGame/188 Simon-Game-Challenge-Starting-Files/Simon Game Challenge Starting Files/sounds/" + name + ".mp3");
+  var audio = new Audio("/sounds/" + name + ".mp3");
   audio.play();
 }
 
